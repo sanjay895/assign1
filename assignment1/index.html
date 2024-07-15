@@ -4,7 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced CSS Example Page</title>
-    <link rel="stylesheet" type="text/css" href="advanced-styles.css">
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Light grey background */
+        }
+
+        /* Header and navigation styling */
+        header {
+            background-color: #282c34; /* Dark grey background */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #e3e4e6; /* Light grey background for sections */
+        }
+
+        /* Flexbox container styling */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+            background-color: #fff; /* White background */
+            padding: 10px;
+        }
+
+        /* Flexbox item styling */
+        .flex-item {
+            background-color: #ffeb3b; /* Yellow background */
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            flex: 1;
+        }
+
+        /* Grid container styling */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: #4caf50; /* Green background */
+            padding: 10px;
+            margin: 20px;
+        }
+
+        /* Grid item styling */
+        .grid-item {
+            background-color: #cddc39; /* Lime background */
+            border: 1px solid #8bc34a; /* Dark lime border */
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* CSS Animations */
+        .animation-box {
+            width: 100px;
+            height: 100px;
+            background-color: #2196f3; /* Blue background */
+            margin: auto;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            transition: transform 0.5s, background-color 0.5s;
+        }
+
+        .animation-box:hover {
+            transform: scale(1.2);
+            background-color: #ff5722; /* Orange background on hover */
+        }
+
+        /* CSS Transitions */
+        .transition-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #03a9f4; /* Light blue background */
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /*Responsive Design */
+        .responsive-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .responsive-item {
+            background-color: #ff9800; /* Orange background */
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            flex: 1 1 200px;
+        }
+
+        footer {
+            background-color: #282c34; /* Dark grey background */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -46,11 +173,6 @@
         <div class="animation-box">Hover over me!</div>
     </section>
 
-    <section id="section4" class="section">
-        <h2>CSS Transitions</h2>
-        <button class="transition-button">Hover over me!</button>
-    </section>
-
     <section id="section5" class="section">
         <h2>Responsive Design</h2>
         <div class="responsive-container">
@@ -65,4 +187,3 @@
     </footer>
 </body>
     </html>
-    
